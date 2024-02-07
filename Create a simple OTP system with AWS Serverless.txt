@@ -1,0 +1,21 @@
+https://dev.to/aws-builders/create-a-simple-otp-system-with-aws-serverless-106m ---- Create a simple OTP system with AWS Serverless
+
+
+
+Steps to create Site to Site VPN.
+
+1. First create Virtual Private Gateway and attach it to the VPC
+2. Create customer Gateway with the inputs shared to us by the customer
+3. Create a Site to Site VPN with the details shared to us by the customer
+4. Choose the Customer Gateway and Virtual Private Gateway which you created earlier while creating a site to site VPN.
+5. Choose the Subnet which is attached to the VPC ie the EC2 which is associaed with Private Subnet,
+Navigate to its route table and add routes by choosing the on-prem CIDR, point it towards Virtual Private Gateway
+6. Go to site to site VPN and download the configuration file while doing this it will ask fill up the details as shared by the customer such as on-premise Firewall name, version. Send the downloaded file to the on-premsie firewall admin.
+
+The Details you ask the customer before creating a Site to Site VPN are as follows.
+
+1.Onpremise CIDR -
+2.Firewall Public IP :
+3.Name of the Firewall -
+4.Private IP range of Onpremise site location :
+5.Contact details of On-premise Network/Firewall Admin.
